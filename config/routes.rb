@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "signup", to: "users#new"
   
   get "ranking/want", to: "rankings#want"
+  get "ranking/have", to: "rankings#have"
   
   resources :users, only: [:show, :new, :create]
   
